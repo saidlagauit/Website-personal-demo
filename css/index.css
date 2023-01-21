@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    --main-color: #346751;
+    --secondary-color: #161616;
+    --third-color: #C84B31;
+    --font: 'Acme', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-size: var(--font);
+    color: var(--bs-secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.radius {
+    border-radius: 10% 30% 50% 70%;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.third-color {
+    color: var(--third-color);
+}
+
+.btn-outline-success {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    transition: .6s;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* Start Navbar */
+.navbar-dark .navbar-toggler {
+    border-color: rgb(52 103 81 / 100%);
+}
+
+a,
+.nav-link,
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.24rem;
+    color: var(--bs-secondary);
+    transition: .6s;
+}
+
+.nav-link:hover,
+.btn-scroll a:hover,
+a:hover,
+.navbar-dark .navbar-toggler:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+/* Start Intro */
+
+.intro {
+    background-color: var(--secondary-color);
+    padding: 5rem 0 1rem 0;
+    height: 100vh;
+}
+
+.intro-title {
+    margin-bottom: 0.5rem;
+}
+
+.intro .intro-title p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.intro .intro-title h1 {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.intro .intro-title span {
+    font-size: 1.3rem;
+}
+
+.img-thumbnail {
+    background-color: var(--bs-dark);
+    border: 0.5rem rgb(33 37 41 / 60%);
+}
+
+.btn-scroll {
+    bottom: 10px;
+    left: 50%;
+    z-index: 3;
+    transition: .6s;
+}
+
+/* Start About Us */
+
+.about {
+    padding: 5rem 0.1rem;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.about .about-skills a i {
+    padding: 1.5rem 0;
+}
+
+.about .service {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--third-color);
+    border-radius: 5px;
+}
+
+.about .service .fas {
+    font-size: 1.8rem;
+    color: var(--third-color);
+}
+
+.about .service .service-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--bs-secondary);
+    margin-top: 10px;
+}
+
+.about .service .service-description {
+    font-size: 1.1rem;
+    color: var(--bs-gray);
+    margin-top: 10px;
+}
+
+/* Start Blog */
+
+.blog {
+    padding: 5rem 0 1.5rem 0;
+}
+
+/* Start Contact */
+
+.contact {
+    padding: 4.3rem 0 2rem 0;
+    height: calc(100vh - 17rem);
+}
+
+.input-group-text {
+    color: var(--bs-secondary);
+}
+
+.form-control:focus,
+.form-control {
+    background-color: transparent;
+    color: var(--bs-secondary);
+}
+
+.form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.25rem rgb(52 103 81 / 25%);
+}
+
+/* Start Footer */
+
+.footer {
+    padding: 1rem 0 0 0;
+}
+
+.border-start {
+    border-left: 5px solid var(--third-color) !important;
+    padding-left: 0.5rem;
+}
+
+/* Start Screen Phone */
+@media (max-width: 576px) {
+
+    .img-thumbnail {
+        padding: 0;
+    }
+
+    .intro {
+        padding-bottom: 2rem;
+    }
+
+    .intro-img {
+        padding-top: 1rem;
+    }
+
+    .intro .intro-title span,
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .intro .intro-title p {
+        font-size: 1.2rem;
+    }
+
+    .intro .intro-title h1 {
+        font-size: 4rem;
+    }
+
+    .about {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .about .about-info {
+        padding-top: 0.7rem;
+    }
+
+    .contact {
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .radius {
+        border-radius: 20% 50% 30% 10%;
+    }
+
+    .card-pt {
+        margin-top: 1rem;
+    }
+
+    .footer .nav .nav-link {
+        padding: 0.3rem 0;
+    }
+
+}
